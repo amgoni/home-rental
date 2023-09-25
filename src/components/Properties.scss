@@ -1,0 +1,39 @@
+@import "../config/variables.scss";
+
+#properties {
+  margin-top: 2rem;
+
+  .properties-container {
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 52px;
+    }
+
+    h2:after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background: $dark-blue;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-top: 2rem;
+    }
+
+    .properties-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 30px;
+      margin-top: 3%;
+
+      .property:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

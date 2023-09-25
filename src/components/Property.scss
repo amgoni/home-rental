@@ -1,0 +1,37 @@
+@import "../config/variables.scss";
+
+.property {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  width: 300px;
+  // height: 500px;
+  border-radius: 26.617px;
+  border: 1px solid $light;
+  background: #fff;
+
+  img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 26.617px 26.617px 0px 0px;
+  }
+
+  h3 {
+    font-size: 18px;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  p {
+    font-size: 14px;
+    color: #818181;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+  }
+
+  h4 {
+    font-size: 20px;
+    color: $dark-blue;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,107 @@
+@import "../config/variables.scss";
+
+#hero {
+  .hero-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+    .hero-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-right: 3rem;
+
+      .hero-heading {
+        width: 545px;
+        margin-bottom: 1rem;
+
+        h1 {
+          font-size: 64.85px;
+        }
+      }
+
+      .hero-details {
+        width: 545px;
+        margin-bottom: 1rem;
+
+        p {
+          font-size: 21.25px;
+        }
+      }
+
+      .hero-search {
+        display: flex;
+        align-items: center;
+        background-color: $light;
+        padding: 24px;
+
+        select {
+          width: 200px;
+          padding: 8px 16px;
+          margin-right: 1rem;
+          border: 2px solid $light-blue;
+          color: $light-blue;
+          font-size: 16px;
+          border-radius: 4px;
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1) inset;
+
+          .hero-options {
+            padding: 16px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .hero-image {
+      img {
+        width: 100%;
+        z-index: 2;
+      }
+
+      .dots1 {
+        position: absolute;
+        z-index: -1;
+        width: 152px;
+        right: 12%;
+      }
+
+      .dots2 {
+        @extend .dots1;
+        top: 20%;
+      }
+
+      .dots3 {
+        @extend .dots1;
+        top: 31%;
+      }
+
+      .dots4 {
+        @extend .dots1;
+        top: 42%;
+      }
+
+      .dots5 {
+        @extend .dots1;
+        top: 53%;
+      }
+
+      .dots6 {
+        @extend .dots1;
+        top: 64%;
+      }
+
+      .dots-1 {
+        @extend .dots1;
+        right: 21.4%;
+      }
+
+      .dots-2 {
+        @extend .dots1;
+        right: 31.8%;
+      }
+    }
+  }
+}

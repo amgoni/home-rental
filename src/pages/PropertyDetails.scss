@@ -1,0 +1,192 @@
+@import "../config/variables.scss";
+
+#property-details {
+  margin-bottom: 2rem;
+
+  .property-details-container {
+    width: 80%;
+    margin: 0 auto;
+
+    .property-details-heading {
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      h1:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background: $dark-blue;
+      }
+    }
+
+    .property-details {
+      display: flex;
+      justify-content: space-between;
+      text-transform: capitalize;
+
+      .property-details-main {
+        width: 60%;
+
+        .property-details-image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .property-details-booking {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 2rem;
+          background-color: $light;
+          width: 80%;
+          margin: 2rem auto;
+        }
+
+        .property-details-description {
+          width: 80%;
+          margin: 0 auto;
+
+          h2 {
+            margin-bottom: 0.5rem;
+          }
+
+          h4 {
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            line-height: 2;
+          }
+        }
+      }
+
+      .property-details-info {
+        width: 37%;
+
+        #contact {
+          background-color: $light;
+          padding: 2rem;
+          margin-bottom: 2rem;
+
+          .contact-container {
+            width: 100%;
+
+            h2 {
+              font-size: 30px;
+            }
+
+            form {
+              input {
+                width: 70%;
+              }
+            }
+          }
+        }
+
+        .property-details-info-profile {
+          padding: 2rem;
+          background-color: $light;
+
+          margin-bottom: 2rem;
+
+          h4 {
+            font-size: 25px;
+          }
+
+          h4:after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: $dark-blue;
+            margin-bottom: 1rem;
+          }
+
+          .property-details-info-profile-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+              width: 50%;
+              border-radius: 50%;
+              margin-bottom: 0.5rem;
+            }
+
+            .property-details-info-profile-details-text {
+              text-align: center;
+
+              h5 {
+                font-size: 20px;
+                margin-bottom: 0.5rem;
+              }
+
+              p {
+                margin-bottom: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Property Details Modal */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Modal Content */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Modal Content Text */
+.modal-content p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Add an animation effect to the modal */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

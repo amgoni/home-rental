@@ -1,0 +1,46 @@
+@import "../config/variables.scss";
+
+#list-property {
+  margin-top: 10rem;
+
+  .list-property-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+    .list-property-image {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .list-property-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-right: 3rem;
+
+      .list-property-heading {
+        width: 545px;
+        margin-bottom: 1rem;
+
+        h2 {
+          font-size: 52px;
+        }
+      }
+
+      .list-property-details {
+        width: 545px;
+        margin-bottom: 1rem;
+
+        p {
+          font-size: 21.25px;
+        }
+      }
+    }
+  }
+}
